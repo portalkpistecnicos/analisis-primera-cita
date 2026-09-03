@@ -260,36 +260,36 @@
     </div>
     <div class="header__period">
       <span class="period__label">Periodo</span>
-      <span class="period__value">Agosto 2026</span>
+      <span class="period__value">Septiembre 2026</span>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero__figure">
-      <span class="hero__value">66,80<small>%</small></span>
-      <span class="hero__caption">2.219 de 3.322 instalaciones con primera cita cumplida, consolidado San Antonio + Valparaíso + Viña del Mar.</span>
+      <span class="hero__value">70,59<small>%</small></span>
+      <span class="hero__caption">84 de 119 instalaciones con primera cita cumplida, consolidado San Antonio + Valparaíso + Viña del Mar.</span>
     </div>
     <div class="hero__meta">
-            <div class="hero__meta-row"><span>Meta ponderada por volumen</span><strong class="mono">68,39%</strong></div>
-      <div class="hero__meta-row"><span>Brecha vs. meta ponderada</span><strong class="mono neg">−1,59 pts</strong></div>
-      <div class="hero__meta-row"><span>Agencias sobre meta</span><strong class="mono">2 de 3</strong></div>
+            <div class="hero__meta-row"><span>Meta ponderada por volumen</span><strong class="mono">68,41%</strong></div>
+      <div class="hero__meta-row"><span>Brecha vs. meta ponderada</span><strong class="mono pos">+2,18 pts</strong></div>
+      <div class="hero__meta-row"><span>Agencias sobre meta</span><strong class="mono"> de 3</strong></div>
       <p class="hero__note">Universo: proceso Instalación · Alta Línea / Alta Producto · acceso FO · TOA cerrado · estado ≠ cancelado. Formula: completadas 1ª cita (toa_completados=1) / total peticiones agendadas 1ª cita del mes.</p>
     </div>
   </section>
 
   <section class="cards">
-    <article class="card card--good">
+    <article class="card">
       <div class="card__top">
         <h2>San Antonio</h2>
-        <span class="chip chip--good">Cumple</span>
+        <span class="chip chip--bad">No cumple</span>
       </div>
-      <div class="card__figure">80,78<small>%</small></div>
+      <div class="card__figure">72,73<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:81.00%"></div>
+        <div class="card__bar-fill" style="width:73.00%"></div>
         <div class="card__bar-target" style="left:75.00%"></div>
       </div>
-      <div class="card__stats"><span>Meta 75,00%</span><span class="delta pos">+5,78 pts</span></div>
-      <div class="card__count">290 / 359 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 75,00%</span><span class="delta neg">−2,27 pts</span></div>
+      <div class="card__count">8 / 11 completadas 1ª cita</div>
     </article>
 
     <article class="card card--good">
@@ -297,13 +297,13 @@
         <h2>Valparaíso</h2>
         <span class="chip chip--good">Cumple</span>
       </div>
-      <div class="card__figure">72,40<small>%</small></div>
+      <div class="card__figure">78,95<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:72.00%"></div>
+        <div class="card__bar-fill" style="width:79.00%"></div>
         <div class="card__bar-target" style="left:70.00%"></div>
       </div>
-      <div class="card__stats"><span>Meta 70,00%</span><span class="delta pos">+2,40 pts</span></div>
-      <div class="card__count">661 / 913 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 70,00%</span><span class="delta pos">+8,95 pts</span></div>
+      <div class="card__count">30 / 38 completadas 1ª cita</div>
     </article>
 
     <article class="card">
@@ -311,13 +311,13 @@
         <h2>Viña del Mar</h2>
         <span class="chip chip--bad">No cumple</span>
       </div>
-      <div class="card__figure">61,85<small>%</small></div>
+      <div class="card__figure">65,71<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:62.00%"></div>
+        <div class="card__bar-fill" style="width:66.00%"></div>
         <div class="card__bar-target" style="left:66.51%"></div>
       </div>
-      <div class="card__stats"><span>Meta 66,51%</span><span class="delta neg">−4,66 pts</span></div>
-      <div class="card__count">1.268 / 2.050 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 66,51%</span><span class="delta neg">−0,80 pts</span></div>
+      <div class="card__count">46 / 70 completadas 1ª cita</div>
     </article>
   </section>
 
@@ -356,9 +356,9 @@
       </ul>
     </div>
     <div class="footer__meta">
-      <span>Fuente: BBDD/p73_semaforizacion_pcita_2026-08.csv</span>
+      <span>Fuente: BBDD/p73_semaforizacion_pcita_2026-09.csv</span>
       <span>Agencia = toa_xa_original_agency</span>
-      <span>Generado 02-09-2026</span>
+      <span>Generado 03-09-2026</span>
     </div>
   </footer>
 
@@ -366,17 +366,17 @@
 
 <script>
 (function(){
-  var dates = ["01-08","02-08","03-08","04-08","05-08","06-08","07-08","08-08","09-08","10-08","11-08","12-08","13-08","14-08","15-08","16-08","17-08","18-08","19-08","20-08","21-08","22-08","23-08","24-08","25-08","26-08","27-08","28-08","29-08","30-08","31-08"];
+  var dates = ["01-09"];
 
   var series = [
     { key:"sa", name:"San Antonio", color:"var(--series-sa)", meta:75.00,
-      data:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+      data:[null] },
     { key:"vp", name:"Valparaíso", color:"var(--series-vp)", meta:70.00,
-      data:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+      data:[null] },
     { key:"vm", name:"Viña del Mar", color:"var(--series-vm)", meta:66.51,
-      data:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+      data:[null] },
     { key:"total", name:"Total 3 agencias", color:"var(--series-total)", meta:null, muted:true,
-      data:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] }
+      data:[null] }
   ];
 
   function fmt(v){ if(v===null||v===undefined) return "—"; return v.toFixed(2).replace(".", ","); }
