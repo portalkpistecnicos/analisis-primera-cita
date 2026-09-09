@@ -268,12 +268,12 @@
 
   <section class="hero">
     <div class="hero__figure">
-      <span class="hero__value">72,39<small>%</small></span>
-      <span class="hero__caption">464 de 641 instalaciones con primera cita cumplida, consolidado San Antonio + Valparaíso + Viña del Mar.</span>
+      <span class="hero__value">71,82<small>%</small></span>
+      <span class="hero__caption">548 de 763 instalaciones con primera cita cumplida, consolidado San Antonio + Valparaíso + Viña del Mar.</span>
     </div>
     <div class="hero__meta">
-            <div class="hero__meta-row"><span>Meta ponderada por volumen</span><strong class="mono">68,42%</strong></div>
-      <div class="hero__meta-row"><span>Brecha vs. meta ponderada</span><strong class="mono pos">+3,97 pts</strong></div>
+            <div class="hero__meta-row"><span>Meta ponderada por volumen</span><strong class="mono">68,37%</strong></div>
+      <div class="hero__meta-row"><span>Brecha vs. meta ponderada</span><strong class="mono pos">+3,45 pts</strong></div>
       <div class="hero__meta-row"><span>Agencias sobre meta</span><strong class="mono">2 de 3</strong></div>
       <p class="hero__note">Universo: proceso Instalación · Alta Línea / Alta Producto · acceso FO · TOA cerrado · estado ≠ cancelado. Formula: completadas 1ª cita (toa_completados=1) / total peticiones agendadas 1ª cita del mes.</p>
     </div>
@@ -285,13 +285,13 @@
         <h2>San Antonio</h2>
         <span class="chip chip--bad">No cumple</span>
       </div>
-      <div class="card__figure">73,21<small>%</small></div>
+      <div class="card__figure">73,53<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:73.00%"></div>
+        <div class="card__bar-fill" style="width:74.00%"></div>
         <div class="card__bar-target" style="left:75.00%"></div>
       </div>
-      <div class="card__stats"><span>Meta 75,00%</span><span class="delta neg">−1,79 pts</span></div>
-      <div class="card__count">41 / 56 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 75,00%</span><span class="delta neg">−1,47 pts</span></div>
+      <div class="card__count">50 / 68 completadas 1ª cita</div>
     </article>
 
     <article class="card card--good">
@@ -299,13 +299,13 @@
         <h2>Valparaíso</h2>
         <span class="chip chip--good">Cumple</span>
       </div>
-      <div class="card__figure">76,17<small>%</small></div>
+      <div class="card__figure">76,35<small>%</small></div>
       <div class="card__bar">
         <div class="card__bar-fill" style="width:76.00%"></div>
         <div class="card__bar-target" style="left:70.00%"></div>
       </div>
-      <div class="card__stats"><span>Meta 70,00%</span><span class="delta pos">+6,17 pts</span></div>
-      <div class="card__count">163 / 214 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 70,00%</span><span class="delta pos">+6,35 pts</span></div>
+      <div class="card__count">184 / 241 completadas 1ª cita</div>
     </article>
 
     <article class="card card--good">
@@ -313,13 +313,13 @@
         <h2>Viña del Mar</h2>
         <span class="chip chip--good">Cumple</span>
       </div>
-      <div class="card__figure">70,08<small>%</small></div>
+      <div class="card__figure">69,16<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:70.00%"></div>
+        <div class="card__bar-fill" style="width:69.00%"></div>
         <div class="card__bar-target" style="left:66.51%"></div>
       </div>
-      <div class="card__stats"><span>Meta 66,51%</span><span class="delta pos">+3,57 pts</span></div>
-      <div class="card__count">260 / 371 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 66,51%</span><span class="delta pos">+2,65 pts</span></div>
+      <div class="card__count">314 / 454 completadas 1ª cita</div>
     </article>
   </section>
 
@@ -360,7 +360,7 @@
     <div class="footer__meta">
       <span>Fuente: BBDD/p73_semaforizacion_pcita_2026-09.csv</span>
       <span>Agencia = toa_xa_original_agency</span>
-      <span>Generado 08-09-2026</span>
+      <span>Generado 09-09-2026</span>
     </div>
   </footer>
 
@@ -370,17 +370,17 @@
 
 <script>
 (function(){
-  var dates = ["01-09","02-09","03-09","04-09","05-09","06-09"];
+  var dates = ["01-09","02-09","03-09","04-09","05-09","06-09","07-09"];
 
   var series = [
     { key:"sa", name:"San Antonio", color:"var(--series-sa)", meta:75.00,
-      data:[null,null,null,null,null,null] },
+      data:[null,null,null,null,null,null,null] },
     { key:"vp", name:"Valparaíso", color:"var(--series-vp)", meta:70.00,
-      data:[null,null,null,null,null,null] },
+      data:[null,null,null,null,null,null,null] },
     { key:"vm", name:"Viña del Mar", color:"var(--series-vm)", meta:66.51,
-      data:[null,null,null,null,null,null] },
+      data:[null,null,null,null,null,null,null] },
     { key:"total", name:"Total 3 agencias", color:"var(--series-total)", meta:null, muted:true,
-      data:[null,null,null,null,null,null] }
+      data:[null,null,null,null,null,null,null] }
   ];
 
   function fmt(v){ if(v===null||v===undefined) return "—"; return v.toFixed(2).replace(".", ","); }
