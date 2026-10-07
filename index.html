@@ -268,30 +268,30 @@
 
   <section class="hero">
     <div class="hero__figure">
-      <span class="hero__value">72,39<small>%</small></span>
-      <span class="hero__caption">396 de 547 instalaciones con primera cita cumplida, consolidado San Antonio + Valparaíso + Viña del Mar.</span>
+      <span class="hero__value">68,79<small>%</small></span>
+      <span class="hero__caption">454 de 660 instalaciones con primera cita cumplida, consolidado San Antonio + Valparaíso + Viña del Mar.</span>
     </div>
     <div class="hero__meta">
-            <div class="hero__meta-row"><span>Meta ponderada por volumen</span><strong class="mono">68,38%</strong></div>
-      <div class="hero__meta-row"><span>Brecha vs. meta ponderada</span><strong class="mono pos">+4,01 pts</strong></div>
-      <div class="hero__meta-row"><span>Agencias sobre meta</span><strong class="mono pos">3 de 3</strong></div>
+            <div class="hero__meta-row"><span>Meta ponderada por volumen</span><strong class="mono">68,35%</strong></div>
+      <div class="hero__meta-row"><span>Brecha vs. meta ponderada</span><strong class="mono pos">+0,44 pts</strong></div>
+      <div class="hero__meta-row"><span>Agencias sobre meta</span><strong class="mono"> de 3</strong></div>
       <p class="hero__note">Universo: proceso Instalación · Alta Línea / Alta Producto · acceso FO · TOA cerrado · estado ≠ cancelado. Formula: completadas 1ª cita (toa_completados=1) / total peticiones agendadas 1ª cita del mes.</p>
     </div>
   </section>
 
   <section class="cards">
-    <article class="card card--good">
+    <article class="card">
       <div class="card__top">
         <h2>San Antonio</h2>
-        <span class="chip chip--good">Cumple</span>
+        <span class="chip chip--bad">No cumple</span>
       </div>
-      <div class="card__figure">77,36<small>%</small></div>
+      <div class="card__figure">74,58<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:77.00%"></div>
+        <div class="card__bar-fill" style="width:75.00%"></div>
         <div class="card__bar-target" style="left:75.00%"></div>
       </div>
-      <div class="card__stats"><span>Meta 75,00%</span><span class="delta pos">+2,36 pts</span></div>
-      <div class="card__count">41 / 53 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 75,00%</span><span class="delta neg">−0,42 pts</span></div>
+      <div class="card__count">44 / 59 completadas 1ª cita</div>
     </article>
 
     <article class="card card--good">
@@ -299,27 +299,27 @@
         <h2>Valparaíso</h2>
         <span class="chip chip--good">Cumple</span>
       </div>
-      <div class="card__figure">76,83<small>%</small></div>
+      <div class="card__figure">72,20<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:77.00%"></div>
+        <div class="card__bar-fill" style="width:72.00%"></div>
         <div class="card__bar-target" style="left:70.00%"></div>
       </div>
-      <div class="card__stats"><span>Meta 70,00%</span><span class="delta pos">+6,83 pts</span></div>
-      <div class="card__count">126 / 164 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 70,00%</span><span class="delta pos">+2,20 pts</span></div>
+      <div class="card__count">148 / 205 completadas 1ª cita</div>
     </article>
 
-    <article class="card card--good">
+    <article class="card">
       <div class="card__top">
         <h2>Viña del Mar</h2>
-        <span class="chip chip--good">Cumple</span>
+        <span class="chip chip--bad">No cumple</span>
       </div>
-      <div class="card__figure">69,39<small>%</small></div>
+      <div class="card__figure">66,16<small>%</small></div>
       <div class="card__bar">
-        <div class="card__bar-fill" style="width:69.00%"></div>
+        <div class="card__bar-fill" style="width:66.00%"></div>
         <div class="card__bar-target" style="left:66.51%"></div>
       </div>
-      <div class="card__stats"><span>Meta 66,51%</span><span class="delta pos">+2,88 pts</span></div>
-      <div class="card__count">229 / 330 completadas 1ª cita</div>
+      <div class="card__stats"><span>Meta 66,51%</span><span class="delta neg">−0,35 pts</span></div>
+      <div class="card__count">262 / 396 completadas 1ª cita</div>
     </article>
   </section>
 
@@ -360,7 +360,7 @@
     <div class="footer__meta">
       <span>Fuente: BBDD/p73_semaforizacion_pcita_2026-10.csv</span>
       <span>Agencia = toa_xa_original_agency</span>
-      <span>Generado 06-10-2026</span>
+      <span>Generado 07-10-2026</span>
     </div>
   </footer>
 
@@ -370,17 +370,17 @@
 
 <script>
 (function(){
-  var dates = ["01-10","02-10","03-10","04-10","05-10"];
+  var dates = ["01-10","02-10","03-10","04-10","05-10","06-10"];
 
   var series = [
     { key:"sa", name:"San Antonio", color:"var(--series-sa)", meta:75.00,
-      data:[null,null,null,null,null] },
+      data:[null,null,null,null,null,null] },
     { key:"vp", name:"Valparaíso", color:"var(--series-vp)", meta:70.00,
-      data:[null,null,null,null,null] },
+      data:[null,null,null,null,null,null] },
     { key:"vm", name:"Viña del Mar", color:"var(--series-vm)", meta:66.51,
-      data:[null,null,null,null,null] },
+      data:[null,null,null,null,null,null] },
     { key:"total", name:"Total 3 agencias", color:"var(--series-total)", meta:null, muted:true,
-      data:[null,null,null,null,null] }
+      data:[null,null,null,null,null,null] }
   ];
 
   function fmt(v){ if(v===null||v===undefined) return "—"; return v.toFixed(2).replace(".", ","); }
